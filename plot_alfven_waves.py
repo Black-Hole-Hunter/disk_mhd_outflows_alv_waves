@@ -1,9 +1,4 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Fri Dec  6 23:20:38 2024
 
-@author: Алина
-"""
 import matplotlib.pyplot as plt
 import numpy as np
 from matplotlib import pyplot as plt
@@ -20,7 +15,7 @@ plt.rcParams.update({'ytick.labelsize':fsize})
 plt.rcParams.update({'legend.fontsize':fsize-4})
 
 # относительный путь к файлам данных
-path = "./out/"
+path = "./out6/"
 
 # список файлов для визуализации
 files_list = [0, 100, 500, 700, 800, 831]
@@ -34,7 +29,7 @@ fig_height_cm = 10 # Эта строка была добавлена
 # размер маркера
 ms = 0.5
 
-# создание окна рисунка с 1-ой панелью (изменил на одну панель)
+# создание окна рисунка с 1-ой панелью 
 fig, axs = plt.subplots(1, 1, figsize=(fig_width_cm/inch2cm, fig_height_cm/inch2cm), dpi=200)
 
 axs.set_xlabel(r'$z/H$')
