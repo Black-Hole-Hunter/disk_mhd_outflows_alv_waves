@@ -439,7 +439,7 @@ def SaveData(n, t_n):
     # Correctly create fmt with 6 specifiers
     fmt = ('%.3e',) * (var_number + 1)  
 
-    np.savetxt("./out/data" + str(n) + ".dat", np.array(data).transpose(), fmt=fmt, header=("%.2e" % t_n), comments="")
+    np.savetxt("./out6/data" + str(n) + ".dat", np.array(data).transpose(), fmt=fmt, header=("%.2e" % t_n), comments="")
 
 
 print("Press Enter to start a simulation")
